@@ -1,9 +1,9 @@
 install.packages("readxl")
 library(readxl)
 
-file.choose()
+#file.choose()
 
-ruta_excel<-"D:\\Documentos\\Cienciasdelacomputación\\2020-02\\Administración de datos\\Projects\\PreviaTrabajo\\Partos atendidos por especialistas.xlsx"
+ruta_excel<-"Partos_atendidos_por_especialistas.xlsx"
 
 datos<- read_excel(ruta_excel, sheet='serie-partos CU-2.8', range = 'B18:O45')
 
@@ -48,9 +48,9 @@ for(i in 1:nrow(datosMuestra)){
 
 
 
-file.choose()
+#file.choose()
 
-ruta_excel2<-"D:\\Documentos\\Cienciasdelacomputación\\2020-02\\Administración de datos\\Projects\\PreviaTrabajo\\Adolescentes embarazadas.xlsx"
+ruta_excel2<-"Adolescentes_embarazadas.xlsx"
 
 datos2<- read_excel(ruta_excel2, sheet='mater adoles 2.10', range = 'B12:P39')
 
